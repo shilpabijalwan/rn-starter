@@ -19,12 +19,19 @@ const HomeScreen = ({ navigation }) => {
           onPress={() => navigation.navigate("Components")}
         />
       </View>
-      <View>
-        {/* <Button title="List component" /> */}
-        <TouchableOpacity onPress={() => navigation.navigate("ListComp")}>
-          <Text>List Component</Text>
-        </TouchableOpacity>
-      </View>
+
+      {/* <Button title="List component" /> */}
+      <TouchableOpacity onPress={() => navigation.navigate("ListComp")}>
+        <Text>List Component</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => navigation.navigate("ImageScreen")}>
+        <Text>Images</Text>
+      </TouchableOpacity>
+      <Button
+        title="Counter app"
+        onPress={() => navigation.navigate("Counter")}
+      />
     </View>
   );
 };
